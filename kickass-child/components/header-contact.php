@@ -15,15 +15,15 @@
 	// Display header boxes.
 	if ( $header_phone ) : ?>
 		<div class="box phone">
-			<a href="tel:<?php '+' . preg_replace( '/[^0-9]/', '', $header_phone ); ?>">
-				<?php $header_phone ?>
+			<a href="tel:<?php echo '+' . preg_replace( '/[^0-9]/', '', $header_phone ); ?>">
+				<?php echo $header_phone ?>
 			</a>
 		</div><!-- .box -->
 	<?php endif; ?>
 	<?php if ( $header_email ) : ?>
 		<div class="box email">
-			<a href="mailto:<?php $header_email ?>">
-				<?php $header_email ?>
+			<a href="mailto:<?php echo $header_email ?>">
+				<?php echo $header_email ?>
 			</a>
 		</div><!-- .box -->
 	<?php endif; ?>
