@@ -8,6 +8,6 @@
 
 <div class="site-branding">
 	<?php if ( has_custom_logo() ) : the_custom_logo(); else : ?>
-		<h1 class="site-title"><a href="<?= esc_url(home_url('/')) ?>" rel="home"><?= bloginfo('name') ?></a></h1>
+		<h1 class="site-title"><a href="<?php echo esc_url(home_url('/')) ?>" rel="home"><?php echo bloginfo('name') ?></a></h1>
 	<?php endif; ?>
 </div><!-- .site-branding -->
